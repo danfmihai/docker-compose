@@ -44,5 +44,5 @@ volumes:
 # Run Mysql command to link mysqldatabase container with mysql
 
 ```
-docker run -it --link mysql_database:mysql --rm mysql sh -c 'exec mysql -h "$MYSQL_PORT_TCP_ADDRESS" -u root -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"
+docker run -it --link mysql_database:mysql --rm mysql sh -c 'exec mysql -h "$MYSQL_PORT_TCP_ADDRESS" -u root -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"'
 ```

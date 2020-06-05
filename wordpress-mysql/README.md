@@ -50,3 +50,14 @@ or
 ```
 docker run -it --link mysql_database:mysql --rm mysql sh -c 'exec mysql -h "$MYSQL_PORT_TCP_ADDRESS" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"'
 ```
+View Configuration YAML file
+```
+docker-compose config
+or
+docker-compose config --services
+or
+docker-compose images
+or
+# last 10 logs from both services
+docker-compose logs --tail=10
+```

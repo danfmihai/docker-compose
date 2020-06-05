@@ -57,7 +57,12 @@ or
 docker-compose config --services
 or
 docker-compose images
-or
-# last 10 logs from both services
+```
+last 10 logs from both services
+```
 docker-compose logs --tail=10
+``` 
+ running containers 
+```
+docker-compose ps
 ```

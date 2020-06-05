@@ -65,4 +65,9 @@ docker-compose logs --tail=10
  running containers 
 ```
 docker-compose ps
+docker-compose top
+```
+Cleanup command
+```
+docker-compose down
 ```
